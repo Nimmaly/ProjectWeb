@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Overzichtspagina</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav>
+        <a href="overzichtspagina.html"><img id="logo" src="images/nslogo.svg"></a>
+        <a id="avatar" href="inlog.html"> <img src="images/avatar.svg"> Uitloggen </a>
+    </nav>
+
+    <header id="hero">
+        <div id="overlay">
+            <h1 id="titel">99 verhalen NS</h1>
+            <p id="tagline">Snel van A naar B, met leuke, gekke en spannende verhalen</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="filterbalk">
+            <h2 id="zoek">Zoek uw verhaal</h2>
+            <input type="search" id="zoekveld" placeholder="Zoek direct op titel" name="zoeken">
+            <aside>
+                <div id="knoppen">
+                    <button id="btn">Meer opties</button>
+                    <button type="submit" id="search">Zoek</button>
+                </div>
+                <form id="toggle">
+                    <h2 id="zoeker">Selecteer je wensen</h2>
+                    <hr>
+                    <fieldset>
+                        <div class="kolom">
+                            <legend>Welk thema moet het verhaal hebben?</legend>
+                            <ul class="option">
+                                <li class="filter">
+                                    <label class="container"> Comedy
+                                        <input class="box" type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li class="filter">
+                                    <label class="container"> Sport
+                                        <input class="box" type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+
+                                <li class="filter">
+                                    <label class="container"> Fantasie
+                                        <input class="box" type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li class="filter">
+                                    <label class="container"> Gedichten
+                                        <input class="box" type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="kolom">
+                            <legend>Hoe lang wilt u lezen?</legend>
+                            <ul class="option">
+                                <li class="filter">
+                                    <label class="container"> Makkelijk
+                                        <input class="box" type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li class="filter">
+                                    <label class="container"> Gemiddeld
+                                        <input class="box" type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                            </ul>
+                            <ul class="option">
+                                <li class="filter">
+                                    <label class="container"> Moeilijk
+                                        <input class="box" type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="kolom">
+                            <legend>Moeilijkheidsgraad</legend>
+                            <ul class="option">
+                                <li class="filter">
+                                    <label class="container"> Makkelijk
+                                        <input class="box" type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li class="filter">
+                                    <label class="container"> Gemiddeld
+                                        <input class="box" type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                            </ul>
+                            <ul class="option">
+                                <li class="filter">
+                                    <label class="container"> Moeilijk
+                                        <input class="box" type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr>
+                    </fieldset>
+                </form>
+            </aside>
+        </section>
+
+        <h2 class="all">Voor u geselecteerd</h2>
+        <section id="verhalen">
+            <article class="verhaal">
+                <p id="een">
+                    <h3 class="titel">Haiku</h3>
+                    <p class="info">Op zoek naar een boek<br>
+                        Een vrouw vraagt de weg en ik<br>
+                        Koop babyschoentjes</p>
+                    <a class="lees" href="verhaal1.html">Lees dit verhaal</a>
+            </article>
+
+            <article class="verhaal">
+                <p id="twee">
+                    <h3 class="titel">Kater</h3>
+                    <p class="info">Ik had vandaag bus 21 willen nemen naar het Centraal Station om naar de Openbare Bibliotheek te gaan en Stijloefeningen van Raymond Queneau te lenen, een boekwerk waar ik al weken naar op zoek ben. Maar ik heb gisteren iets te veel biertjes naar binnen gegooid en ben nu zo goed als nergens toe in staat. Het wordt, vrees ik, een dagje op de bank hangen. Hopelijk is mijn zoontje niet in een al te zeurende bui. </p>
+                    <a class="lees" href="verhaal1.html">Lees dit verhaal</a>
+            </article>
+
+            <article class="verhaal">
+                <p id="drie">
+                    <h3 class="titel">Moe</h3>
+                    <p class="info">De buschauffeur port me wakker. We zijn bij de eindhalte, Centraal Station. Ik stap uit en duw de kinderwagen voort waarin mijn zoon ligt te slapen. Ik wou dat ik hem was. De mensen lopen in zichzelf gekeerd over het plein. De regen doet z’n best mij wakker te houden, maar mijn oogleden voelen zwaar, alsof er een stel verveelde kaboutertjes aan lopen te trekken. Ik zou hier en nu op de grond kunnen liggen en gaan slapen.</p>
+                    <a class="lees" href="verhaal1.html">Lees dit verhaal</a>
+            </article>
+
+            <article class="verhaal">
+                <p id="vier">
+                    <h3 class="titel">Boers</h3>
+                    <p class="info">Ik stap dus op ut stationsplein in dieën groâte stad uut dieën bus, met mien zoân in zijne keierwoâguh. Mien zoân sloâpt. Gelaik n’n roâske. Ut regent en ut woâit. Ut volk war voârnoâm’luk met z’n eigens bezig. Kop in den kroâg, gok richting grond. En den deze war op weg noâr den Bibliotheek. Om een of ander boekske genaamd Stijloefening’n van een of andere oâteur uut Frankrijk genoâmd René Quenoâ te leiuh. War ik al n’n week of wa noâr op zoek. </p>
+                    <a class="lees" href="">Lees dit verhaal</a>
+            </article>
+            <article class="verhaal">
+                <p id="vijf">
+                    <h3 class="titel">Code</h3>
+                    <p class="info">In kwellende situaties toveren apen pennenvruchten uit invloedrijke tapijthandelaren. De engelen buigen uitermate succesvol en negeren langzaam onze overrijpe politieke overlevingstrategieën. Verveelde en radicaal hompiekurkende ettertjes tegelen slablaadjes tot appelmoes. Tevens, in overleg, nagelen schoolverlaters patatjes. Leipe eekhoorntjes in Napels, met immorele jaknikkers naaien ze ogenblikkelijk, ontegenzeggelijk negerzoenen.</p>
+                    <a class="lees" href="">Lees dit verhaal</a>
+            </article>
+            <article class="verhaal">
+                <p id="zes">
+                    <h3 class="titel">Beroemd</h3>
+                    <p class="info">Als je merkt dat je nog leeft. Nog wel moet leven. Omdat doden geen ridderzwaard door hun kop voelen klieven. Rechtsboven het linkeroog. Honderd keer opnieuw. Als je dat zeker wil weten, en je gaat het tellen. En je raakt de tel kwijt. Ook honderd keer. Als je tegelijkertijd voelt dat het allemaal niet veel scheelt. Dat je langs de rand van een ravijn van honderdduizend opgestapelde dienbladen schuifelt. In polonaise op de beat van het orkest.</p>
+                    <a class="lees" href="">Lees dit verhaal</a>
+            </article>
+        </section>
+
+        <h2 class="all">Verhalen van de dag</h2>
+        <section id="dag">
+            <article class="dagverhaal">
+                <h3 class="dagtitel">Gesponsord</h3>
+                <p class="daginfo">Als je merkt dat je nog leeft. Nog wel moet leven.</p>
+                <a class="daglees" href="">Lees dit verhaal</a>
+            </article>
+
+            <article class="dagverhaal">
+                <h3 class="dagtitel">Martin bril</h3>
+                <p class="daginfo">Als je merkt dat je nog leeft. Nog wel moet leven. </p>
+                <a class="daglees" href="">Lees dit verhaal</a>
+            </article>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

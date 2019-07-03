@@ -1,0 +1,752 @@
+/*body*/
+body {
+    margin: 0;
+    background-color: rgb(230, 230, 233);
+    font-family: "Segoe UI";
+    font-weight: 100;
+}
+
+/*main*/
+main {
+    width: 80%;
+    margin: auto;
+    transition: .2s;
+}
+
+/*main breakpoints*/
+
+@media (max-width: 39em) {
+    main {
+        transition: .2s;
+        width: 100%;
+    }
+}
+
+/*nav*/
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 1.1em;
+    padding-top: 1.2em;
+}
+
+nav img {
+    height: 1.2rem;
+}
+
+#logo {
+    margin-left: 10em;
+}
+
+#titel {
+    font-size: 1.5rem;
+    display: block;
+    font-weight: 600;
+}
+
+#avatar {
+    margin-right: 10em;
+    color: #003082;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+#avatar img {
+    padding-right: 1rem;
+    transition: .3s;
+}
+
+#avatar img:hover {
+    padding-right: .5rem;
+    transition: .3s;
+}
+
+
+/*nav breakpoints*/
+
+@media (max-width: 39em) {
+    #logo {
+        transition: .2s;
+        margin-left: 2em;
+    }
+
+    #avatar {
+        transition: .2s;
+        margin-right: 2em;
+    }
+}
+
+/*header hero*/
+
+#hero {
+    width: 100%;
+    height: 33em;
+    background-color: darkblue;
+    z-index: -1;
+    position: sticky;
+    background-image: url(../images/transavia_dark.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+#hero_verhaal {
+    height: 20em;
+    width: 100%;
+    background-color: darkblue;
+    z-index: -1;
+    position: sticky;
+    background-image: url(../images/transavia_dark.jpg);
+    background-size: cover;
+    background-position: top;
+}
+#overlay {
+    width: 100%;
+    height: 77%;
+    padding-top: 7em;
+    padding-left: 9em;
+}
+
+#titel {
+    color: white;
+    font-size: 2.5em;
+}
+
+#tagline {
+    color: white;
+    font-size: 1em;
+}
+
+/*hero breakpoints*/
+
+@media (max-width: 39em) {
+    #overlay {
+        margin-top: -2em;
+        padding-left: 2em;
+    }
+
+    #tagline {
+        width: 80%;
+    }
+}
+
+@media (min-width: 39em) and (max-width: 55em) {
+    #overlay {
+        padding-left: 5em;
+    }
+}
+
+/*filter*/
+#filterbalk {
+    margin: auto;
+    background-color: #ffc917;
+    margin-top: -6em;
+    z-index: 1;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    box-shadow: 0 2px 0 0 rgba(7, 7, 33, 0.15);
+}
+
+#zoek {
+    width: 100%;
+    margin-top: .5em;
+    font-size: 2em;
+    color: #003082;
+    font-weight: 350;
+}
+
+#zoeker {
+    color: #003082;
+    font-weight: 350;
+}
+
+
+/*voor js*/
+#toggle {
+    display: none;
+}
+
+/*voor styling*/
+#toggle {
+    width: 100%;
+
+}
+
+#zoekveld {
+    width: 100%;
+    margin-bottom: 1em;
+    height: 3em;
+    padding-left: 1em;
+    border-style: none;
+    border-width: .09em;
+    font-size: 1em;
+    outline: none;
+    font-weight: 100;
+}
+
+#knoppen {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+#btn {
+    font-family: segoe ui;
+    background-color: #e6b517;
+    color: #003082;
+    min-width: 7.5rem;
+    height: 2.8125rem;
+    border-style: none;
+    box-shadow: 0 -0.125rem 0 #cfa317 inset;
+    line-height: 1.5625rem;
+    font-size: 1rem;
+    margin-right: 2em;
+    transition: .1s;
+    outline: none;
+    font-weight: 100;
+}
+
+#btn:hover {
+    transition: .1s;
+    box-shadow: inset 0 -3.125rem 0#cfa317;
+}
+
+#search {
+    background-color: #0079d3;
+    color: white;
+    min-width: 7.5rem;
+    height: 2.8125rem;
+    border-style: none;
+    box-shadow: 0 -0.125rem 0 #005ca0 inset;
+    line-height: 1.5625rem;
+    font-size: 1rem;
+    transition: .1s;
+    outline: none;
+    font-weight: 100;
+}
+
+#search:hover {
+    transition: .1s;
+    box-shadow: inset 0 -3.125rem 0 #005ca0;
+}
+
+/*filter select options */
+
+#toggle {
+    display: none;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-style: none;
+    margin-left: -1em;
+}
+
+.kolom {
+    padding-bottom: 2em;
+}
+
+legend {
+    color: #003082
+}
+
+hr {
+    margin-top: 1.5em;
+    border: 0.01em solid rgba(7, 7, 33, .1);
+}
+
+/*ul*/
+.option {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-left: -3em;
+}
+
+.filter {
+    list-style: none;
+    margin: 1em;
+}
+
+/*filterbalk breakpoints*/
+
+@media (max-width: 39em) {
+    #knoppen {
+        transition: .2s;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #btn {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 1em;
+    }
+
+    #search {
+        width: 100%;
+        margin: 0;
+    }
+
+    .kolom {
+        width: 100%;
+
+    }
+}
+
+/*filterbalk breakpoints*/
+
+@media (max-width: 39em) {}
+
+/* checkmarks */
+
+/* The container */
+.container {
+    position: absolute;
+    padding-left: 2.5em;
+    padding-top: .4em;
+    cursor: pointer;
+    font-size: 1em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.5em;
+    width: 1.5em;
+    background-color: white;
+    border-style: none;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 1em;
+    top: -.3em;
+    width: 1.4em;
+    height: 1.3em;
+    /border: solid #0079d3;
+    border: solid red;
+    border-width: 0 1px 1px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/* verhalen */
+
+#verhalen {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.all {
+    width: 100%;
+    margin-top: 1em;
+    font-size: 2em;
+    color: #003082;
+    font-weight: 350;
+}
+
+.all:nth-of-type(2) {
+    margin-top: -1em;
+}
+
+.verhaal {
+    width: 31.5%;
+    background-color: white;
+    padding-bottom: 1em;
+    margin-bottom: 4em;
+    box-shadow: 0 2px 0 0 rgba(7, 7, 33, 0.15);
+}
+
+.verhaal_overzicht {
+    width: 100%;
+    background-color: transparent;
+}
+
+.mobile_img, .tablet_img {
+    display:none;
+}
+.desktop_img {
+    display: block;
+}
+
+.verhaal img {
+    max-width: 100%;
+}
+
+.top {
+    height: auto;
+    width: 100%;
+}
+
+#een {
+    background-image: url(../images/GeishaColorDesktop.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 12em;
+    margin: 0;
+}
+
+#twee {
+    background-image: url(../images/171211094adamcswinter.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 12em;
+    margin: 0;
+}
+
+#drie {
+    background-image: url(../images/abbie-bernet-329631-unsplash.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 12em;
+    margin: 0;
+}
+
+#vier {
+    background-image: url(../images/agence-producteurs-locaux-damien-kuhn-113763-unsplash.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 12em;
+    margin: 0;
+}
+
+#vijf {
+    background-image: url(../images/pankaj-patel-526231-unsplash.jpg);
+    background-size: contain;
+    width: 100%;
+    height: 12em;
+    margin: 0;
+}
+
+#zes {
+    background-image: url(../images/miss-zhang-301185-unsplash.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 12em;
+    margin: 0;
+}
+
+.titel,
+.info,
+.lees {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.titel {
+    color: #003082;
+    font-weight: 350;
+}
+
+.info {
+    color: #060922;
+}
+
+.lees {
+    color: #0079d3;
+    text-decoration: none;
+}
+
+.lees:hover {
+    color: #003082;
+}
+
+@media (max-width: 39em) {
+
+    .all {
+        width: 90%;
+        margin: auto;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        font-size: 2em;
+    }
+
+    .verhaal {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 1em;
+    }
+
+    .verhaal_overzicht {
+        width: 90%;
+    background-color: transparent;
+    }
+
+    .tablet_img, .desktop_img {
+        display:none;
+    }
+    .mobile_img {
+        display: block;
+    }
+
+    .verhaal:nth-child(4) {
+        width: 90%;
+        padding-bottom: 2em;
+    }
+
+    .top {
+        max-height: 10em;
+    }
+
+    #specialtitel {
+        margin-top: 1em;
+        font-size: 2em;
+        margin-left: 1em;
+        color: white;
+    }
+
+    #specialinfo {
+        margin-bottom: 2em;
+        width: 90%;
+    }
+}
+
+@media (min-width: 39em) and (max-width: 55em) {
+
+    .verhaal {
+        width: 45%;
+        margin: 0;
+        margin-bottom: 1em;
+    }
+
+    .verhaal_overzicht {
+        width: 100%;
+    background-color: transparent;
+    }
+
+    .desktop_img, .mobile_img {
+        display:none;
+    }
+    .tablet_img {
+        display: block;
+    }
+
+    .verhaal:nth-child(4) {
+        width: 45%;
+        padding-bottom: 2em;
+    }
+
+    #specialtitel {
+        margin-top: 2em;
+        font-size: 1.5em;
+        margin-left: 1em;
+        color: white;
+    }
+
+    #specialinfo {
+        margin-bottom: 3em;
+        width: 80%;
+    }
+}
+
+/* dagverhaal */
+
+#dag {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.dagverhaal {
+    width: 48%;
+    height: 20em;
+    background-color: white;
+    box-shadow: 0 2px 0 0 rgba(7, 7, 33, 0.15);
+    background-image: url(../images/aaron-sebastian-705195-unsplash.jpg);
+    background-size: cover;
+    background-color: rgba(33, 33, 33, 0.5);
+    background-blend-mode: multiply;
+
+}
+
+.dagverhaal p {
+    width: 80%;
+}
+
+.dagverhaal:nth-child(2) {
+    width: 48%;
+
+    margin-bottom: 4em;
+    box-shadow: 0 2px 0 0 rgba(7, 7, 33, 0.15);
+    background-image: url(../images/josh-calabrese-527813-unsplash.jpg);
+    background-size: cover;
+    background-color: rgba(33, 33, 33, 0.5);
+    background-blend-mode: multiply;
+}
+
+.dagtop {
+    height: auto;
+    width: 100%;
+}
+
+.dagtitel {
+    font-size: 2em;
+    margin-left: 1em;
+    color: white;
+
+}
+
+.daginfo {
+    height: 8em;
+}
+
+.daglees {
+    text-decoration: none;
+    color: white;
+    background-color: #0079d3;
+    padding: 1rem;
+    min-width: 7.5rem;
+    border-style: none;
+    box-shadow: 0 -0.125rem 0 #005ca0 inset;
+    font-size: 1rem;
+    transition: .1s;
+    outline: none;
+}
+
+.daginfo,
+.daglees {
+    margin-left: 2em;
+    color: white;
+}
+
+.daglees:hover {
+    transition: .1s;
+    box-shadow: inset 0 -3.3rem 0 #005ca0;
+}
+
+@media (max-width: 39em) {
+
+    .all:nth-of-type(2) {
+        width: 90%;
+        margin: auto;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    #dag {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .dagverhaal {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    .dagverhaal:nth-child(2) {
+        width: 100%;
+    }
+}
+
+@media (min-width: 39em) and (max-width: 55em) {
+
+    .all:nth-of-type(2) {
+        margin-top: 1em;
+    }
+
+    .dagverhaal {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    .dagverhaal:nth-child(2) {
+        width: 100%;
+    }
+}
+
+
+.title_verhaal {
+    display: inline-block;
+    width: auto;
+}
+.rating {
+  display: inline-block;
+  width: 16em;
+  text-align: center;
+    float: right;
+    margin-top: 1em;
+}
+
+.like,
+.dislike {
+  display: inline-block;
+  cursor: pointer;
+  margin: 5px;
+}
+.amount {
+    display: inline-block;
+    margin: 5px;
+}
+
+.dislike:hover,
+.like:hover {
+  color: #ffc917;
+  transition: all .2s ease-in-out;
+  transform: scale(1.1);
+}
+
+.active {
+  color: #ffc917;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid darkblue; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+    margin: 0 auto;
+    margin-top: 10em;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

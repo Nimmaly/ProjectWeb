@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Verhaal 1</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <nav>
+        <a href="overzichtspagina.html"><img id="logo" src="images/nslogo.svg"></a>
+        <a id="avatar" href="inlog.html"> <img src="images/avatar.svg"> Uitloggen </a>
+    </nav>
+
+    <div id="loader" class="loader"></div>
+
+
+    <header id="hero_verhaal">
+        <div id="overlay">
+            <h1 id="titel">99 verhalen NS</h1>
+            <p id="tagline">Snel van A naar B, met leuke, gekke en spannende verhalen</p>
+        </div >
+    </header>
+
+    <main>
+
+        <h2 class="all title_verhaal">Kater</h2>
+        <div class="rating">
+          <div class="like grow" id="like_button">
+            <i class="fa fa-thumbs-up fa-3x like" aria-hidden="true"></i>
+          </div>
+          <div class="dislike grow" id="dislike_button">
+            <i class="fa fa-thumbs-down fa-3x like" aria-hidden="true"></i>
+          </div>
+          <div class="amount"><p id="rating_amount">0</p></div>
+        </div>
+        <section>
+            <article class="verhaal verhaal_overzicht">
+                <img src="images/Kater_desktop.png" class="desktop_img" />
+                <img src="images/Kater_Ipad.png" class="tablet_img" />
+                <img src="images/Kater_Mobiel.png" class="mobile_img" />
+            </article>
+        </section>
+
+    </main>
+    <script src="js/verhaal_script.js"></script>
+</body>
+
+</html>

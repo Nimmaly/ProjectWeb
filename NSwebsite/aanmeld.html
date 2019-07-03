@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/stylelogin.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="css/fonts.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <nav>
+        <a href="overzichtspagina.html"><img id="logo" src="images/nslogo.svg"></a>
+    </nav>
+
+    <main>
+        <section id="meldaan">
+            <aside id="top">
+                <h2 class="logintitle">NS-account aanvragen</h2>
+                <p id="info">Vul de volgende gegevens in om uw NS-account aan te vragen.</p>
+            </aside>
+
+            <form id="aanmelden">
+                <fieldset>
+                    <legend>Inloggevens</legend>
+                    <div class="field">
+                        <label for="username">E-mailadres</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="field">
+                        <label for="email">Bevestig e-mailadres</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="field">
+                        <label for="password">Wachtwoord</label>
+                        <input id="password" type="password" required>
+                    </div>
+                    <div class="field">
+                        <label for="password">Herhaal wachtwoord</label>
+                        <input id="password" type="password" required>
+                    </div>
+                    <button class="klaar" type="submit">Registreer</button>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+</body>
+
+</html>
